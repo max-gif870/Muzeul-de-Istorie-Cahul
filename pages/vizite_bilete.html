@@ -1,0 +1,42 @@
+<html lang="ro"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muzeul de Istorie Cahul – Bilete</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="page-wrapper">
+  <nav class="navbar">
+    <img src="../logo.png" class="logo-icon" alt="logo" style="width:32px;height:32px;object-fit:contain;vertical-align:middle;">
+    <a href="../index.html" id="nav-home">Home</a>
+    <a href="expozitie.html" id="nav-expozitie">Expozitie</a>
+    <a href="colectii.html" id="nav-colectii">Colecții</a>
+    <a href="vizite.html" id="nav-vizite">Vizite</a>
+    <a href="contacte.html" id="nav-contacts">Contacte</a>
+  </nav>
+  <div class="bilete-title">Bilete</div>
+  <form class="bilete-form" onsubmit="handleSubmit(event)">
+    <input type="text" name="nume" placeholder="Nume" required="">
+    <input type="text" name="prenume" placeholder="Prenume" required="">
+    <input type="email" name="email" placeholder="Email" required="">
+    <input type="tel" name="telefon" placeholder="Telefon">
+    <input type="number" name="bilete" placeholder="Număr bilete" min="1" required="">
+  </form>
+  <button class="confirma-btn" onclick="handleSubmit(event)">Confirmă</button>
+  <a href="vizite.html" class="procura-btn">Înapoi</a>
+  <div style="padding:4px 10px;font-size:10px;color:#888;text-align:center;">
+    Adresa: Str. Independenței 2, Cahul · Tel: +373 299 2-34-56
+  </div>
+  <div class="page-footer">
+    Adresa: Str. Independenței 2, Cahul, 3901 Republica Moldova<br>
+    Tel: +373 299 2-34-56 | Email: info@muzeucahul.md
+  </div>
+</div>
+<script src="../js/main.js"></script>
+<script>
+  function handleSubmit(e) {
+    e.preventDefault();
+    alert('Rezervarea dumneavoastră a fost înregistrată. Vă mulțumim!');
+  }
+</script>
+</body></html>
